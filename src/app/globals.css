@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1e293b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Bahnschrift", "DIN Alternate", "Segoe UI", sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bahnschrift", "DIN Alternate", "Segoe UI", sans-serif;
+  letter-spacing: -0.015em;
+}
+
+::selection {
+  background-color: #f59e0b;
+  color: #0b0f19;
+}
+
+/* Glassmorphism helpers */
+.glass-dark {
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040e1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #163861;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* Brand Text Gradients matching the new logo */
+.text-brand-blue {
+  color: #0070f3;
+}
+
+.text-brand-navy {
+  color: #0a2540;
+}
+
+.text-brand-amber {
+  color: #f59e0b;
+}
+
+.bg-brand-navy {
+  background-color: #0a2540;
+}
+
+.bg-brand-navy-deep {
+  background-color: #040e1b;
+}
+
+.bg-brand-navy-surface {
+  background-color: #081a30;
+}
