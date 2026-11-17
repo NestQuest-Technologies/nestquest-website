@@ -11,21 +11,7 @@ export type TeamMember = {
 };
 
 export const team: TeamMember[] = [
-  {
-    // PLACEHOLDER: replace with the Director's full name.
-    name: "[Director's name]",
-    role: "Director of Strategy & Partnerships",
-    image: "/team/director-strategy.webp",
-    bio: "Sets NestQuest's strategic direction and builds the partnerships that help our products and services reach more businesses and communities.",
-    focus: "Strategy & Partnerships",
-  },
-  {
-    name: "Aubrey Chilambwe",
-    role: "Software Developer & Tech Lead",
-    image: "/team/aubrey.webp",
-    bio: "Leads technical development across NestQuest's products, from mobile apps and cloud backends to the experiences people use every day.",
-    focus: "Product & Architecture",
-  },
+
   {
     name: "Moses Chileshe",
     role: "Human Resource Manager",
@@ -41,11 +27,24 @@ export const team: TeamMember[] = [
     focus: "Finance & Commercial",
   },
   {
-    // PLACEHOLDER: replace with the Associate IT Officer's full name.
-    name: "[Associate's name]",
-    role: "Associate IT Officer & Web Developer",
-    image: "/team/associate-it.webp",
-    bio: "Builds and maintains NestQuest's websites and supports the IT systems the team relies on.",
+    name: "Hamuzala Muzandu",
+    role: "Strategy & Partnerships Manager",
+    image: "/team/hamuzala.webp",
+    bio: "Sets NestQuest's strategic direction and builds the partnerships that help our products and services reach more businesses and communities.",
+    focus: "Strategy & Partnerships",
+  },
+  {
+    name: "Aubrey Chilambwe",
+    role: "Software Developer & Tech Lead",
+    image: "/team/aubrey.webp",
+    bio: "Leads technical development across NestQuest's products, from mobile apps and cloud backends to the experiences people use every day.",
+    focus: "Product & Architecture",
+  },
+  {
+    name: "Patson Tembo",
+    role: "Associate Software & Web Developer",
+    image: "/team/patson.webp",
+    bio: "Builds and maintains NestQuest's web-based services and supports the IT systems the team relies on.",
     focus: "Web & IT Support",
   },
 ];

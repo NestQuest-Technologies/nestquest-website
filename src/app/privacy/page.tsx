@@ -6,7 +6,7 @@ import { FiShield, FiLock, FiDatabase, FiUsers, FiMail, FiPhone, FiMapPin } from
 export const metadata: Metadata = {
   title: "Privacy Policy | NestQuest Technologies Limited",
   description:
-    "Privacy Policy for NestQuest Technologies Limited and the NestQuest mobile application. How we securely collect, protect, and manage your data.",
+    "Privacy Policy for NestQuest Technologies Limited and the My Home mobile application. How we securely collect, protect, and manage your data.",
 };
 
 export default function PrivacyPolicyPage() {

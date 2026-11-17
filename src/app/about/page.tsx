@@ -8,11 +8,14 @@ import {
   FiCheckCircle,
   FiCompass,
   FiEye,
+  FiHeart,
   FiMapPin,
   FiPackage,
+  FiShield,
   FiTarget,
   FiTool,
   FiUsers,
+  FiZap,
 } from "react-icons/fi";
 import {
   company,
@@ -21,6 +24,7 @@ import {
   facts,
   mission,
   story,
+  values,
   vision,
 } from "@/data/company";
 
@@ -31,6 +35,8 @@ export const metadata: Metadata = {
 };
 
 const differentiatorIcons = [FiPackage, FiCompass, FiUsers, FiTool];
+// In the same order as `values` in company.ts: Innovation, Integrity, Customer-centricity, Collaboration
+const valueIcons = [FiZap, FiShield, FiHeart, FiUsers];
 
 const eyebrow = "mb-3 text-xs font-bold uppercase tracking-[0.2em]";
 
@@ -115,6 +121,39 @@ export default function AboutPage() {
                 </p>
               </article>
             ))}
+          </div>
+        </section>
+
+        {/* Core values */}
+        <section className="relative overflow-hidden bg-[#040e1b] py-16 text-white sm:py-20">
+          <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-sky-500/10 blur-[120px]" />
+          <div className="absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-amber-500/10 blur-[120px]" />
+          <div className="container relative z-10 mx-auto max-w-5xl px-5 sm:px-6">
+            <div className="mx-auto mb-10 max-w-2xl text-center sm:mb-12">
+              <p className={`${eyebrow} text-amber-300`}>What guides us</p>
+              <h2 className="text-balance text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Our core values
+              </h2>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
+              {values.map((value, i) => {
+                const Icon = valueIcons[i % valueIcons.length];
+                return (
+                  <article
+                    key={value.title}
+                    className="flex flex-col rounded-2xl border border-[#163861] bg-[#081a30] p-6 transition-colors duration-300 hover:border-amber-400/60"
+                  >
+                    <div className="mb-5 inline-flex w-fit rounded-xl bg-amber-500/15 p-3 text-amber-400">
+                      <Icon className="text-xl" />
+                    </div>
+                    <h3 className="mb-2 text-lg font-bold">{value.title}</h3>
+                    <p className="text-sm leading-relaxed text-slate-300">
+                      {value.description}
+                    </p>
+                  </article>
+                );
+              })}
+            </div>
           </div>
         </section>
 

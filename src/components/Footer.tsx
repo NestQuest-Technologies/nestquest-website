@@ -12,6 +12,7 @@ const capabilityLinks = [
 const companyLinks = [
   { name: "Our approach", href: "/#approach" },
   { name: "Our work", href: "/#work" },
+  { name: "My Home app", href: "/my-home" },
   { name: "About NestQuest", href: "/about" },
   { name: "Privacy policy", href: "/privacy" },
 ];

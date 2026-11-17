@@ -106,10 +106,10 @@ export default function Hero() {
                   properties.
                 </p>
                 <Link
-                  href="/#work"
+                  href="/my-home"
                   className="mt-5 inline-flex items-center gap-2 text-xs font-bold text-amber-400 hover:text-amber-300 transition-colors"
                 >
-                  <span>Read the case study</span>
+                  <span>Explore My Home</span>
                   <FiArrowRight />
                 </Link>
               </div>

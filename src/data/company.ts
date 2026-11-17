@@ -8,29 +8,53 @@ export const company = {
   name: "NestQuest Technologies",
   legalName: "NestQuest Technologies Limited",
   location: "Lusaka, Zambia",
-  founded: "[Year]",
+  founded: "2025",
 };
 
 // Short facts shown as a strip on the About page. Real numbers build trust; vague ones don't.
 export const facts = [
   { value: company.founded, label: "Founded in Lusaka" },
-  { value: "[0]", label: "Products launched" },
-  { value: "[0]", label: "Clients and partners served" },
+  { value: "2", label: "Products launched" },
+  { value: "2", label: "Clients and partners served" },
   { value: "5", label: "People on the core team" },
 ];
 
 // The story: why NestQuest exists. Two or three short paragraphs work best.
 export const story = [
-  "[How NestQuest started: who founded it, when, and what problem or opportunity they saw. Example: “NestQuest began in [Year] when our founders saw how hard it was for people in Lusaka to find reliable rental housing online.”]",
-  "[What happened next: the first product, first clients, or a turning point. Example: “Building My Home taught us how to design for local realities: patchy connectivity, mobile-first users, and trust between strangers.”]",
+  "NestQuest Technologies Limited is certified according to the Zambia Companies Act and operates in accordance with relevant laws and regulations, ensuring the highest standards of quality and integrity. Our commitment to compliance and certification underscores our dedication to excellence and customer satisfaction.",
+  "NestQuest began in 2025 when our founders saw how hard it was for people in Lusaka to find reliable rental housing online. Building 'My Home' taught us how to design for local realities: patchy connectivity, mobile-first users, and trust between strangers.",
   "Today we bring that same thinking to businesses and organisations that need web platforms, mobile applications, and connected systems built for the way people in Zambia and the region actually work.",
 ];
 
 export const mission =
-  "[One sentence on what NestQuest does and for whom. Example: “To build practical, reliable digital products that help Zambian businesses and communities work better.”]";
+  "“To build practical, reliable digital products that help Zambian businesses and communities work better.”";
 
 export const vision =
-  "[One sentence on the future NestQuest is working towards. Example: “A Zambia where every business, large or small, has access to technology built for its needs.”]";
+  "“A Zambia where every business, large or small, has access to technology built for its needs.”";
+
+// Core values, shown on the About page under mission and vision.
+export const values = [
+  {
+    title: "Innovation",
+    description:
+      "We cultivate a culture of creativity and innovation, constantly seeking new ways to improve our products and services.",
+  },
+  {
+    title: "Integrity",
+    description:
+      "We operate with unwavering transparency, honesty, and integrity, building trust with our users and partners.",
+  },
+  {
+    title: "Customer-centricity",
+    description:
+      "We prioritize user experience, ensuring that our solutions meet the evolving needs of our customers.",
+  },
+  {
+    title: "Collaboration",
+    description:
+      "We believe in the power of teamwork and partnerships, working together to achieve common goals and drive success.",
+  },
+];
 
 // What makes NestQuest different. These replace the repeated "principles" lists.
 export const differentiators = [
